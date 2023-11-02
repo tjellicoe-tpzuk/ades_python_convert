@@ -23,4 +23,4 @@ outputs:
       glob: .
 requirements:
   DockerRequirement:
-    dockerPull: eoepca:latest
+    dockerPull: tjellicoetpzuk/convert:latest
