@@ -33,6 +33,7 @@ $graph:
 
   - class: CommandLineTool
     id: convert
+    baseCommand: ["python", "-m", "convert_image"]
     inputs:
       fn:
         type: string
