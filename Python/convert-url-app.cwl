@@ -1,7 +1,7 @@
 cwlVersion: v1.0
 class: CommandLineTool
 id: convert
-#baseCommand: ["python3", "-m", "convert_image"]
+baseCommand: ["python3", "-m", "convert_image"]
 inputs:
   fn:
     type: string
