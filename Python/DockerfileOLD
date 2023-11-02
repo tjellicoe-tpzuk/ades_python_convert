@@ -1,0 +1,10 @@
+FROM ubuntu
+
+RUN python3 pip install PIL && python3 pip install math
+
+WORKDIR /app
+
+COPY ./convert.py /app
+
+
+ENV PATH="/app:${PATH}"
