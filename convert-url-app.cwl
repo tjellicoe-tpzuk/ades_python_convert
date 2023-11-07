@@ -9,7 +9,7 @@ $graph:
   # Workflow entrypoint
   - class: Workflow
     id: convert-url
-    label: s expressions
+    label: convert url image
     doc: Applies resize algorithm to selected image
     inputs:
       fn:
