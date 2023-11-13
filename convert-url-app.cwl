@@ -56,6 +56,6 @@ $graph:
           glob: .
     requirements:
       DockerRequirement:
-        dockerPull: tjellicoetpzuk/convert:latest
+        dockerPull: tjellicoetpzuk/convertnew:latest
       NetworkAccess:
         networkAccess: true
