@@ -44,7 +44,7 @@ Content-Type: application/json
 
 {
   "executionUnit": {
-    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/python_convert/main/convert-url-app.cwl",
+    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/ades_python_convert/main/convert-url-app.cwl",
     "type": "application/cwl"
   }
 }
@@ -66,7 +66,7 @@ Accept: application/json
 ###
 
 # @name deleteProcess
-DELETE https://{{ades}}/{{user}}/wps3/processes/convert-url-1_0 HTTP/1.1
+DELETE https://{{ades}}/{{user}}/wps3/processes/convert-url-0_1_2 HTTP/1.1
 Authorization: Bearer {{idToken}}
 Accept: application/json
 
