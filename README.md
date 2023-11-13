@@ -5,5 +5,7 @@ This application should be run on an [EOEPCA processing deployment](https://gith
 
 ## How to run this application
 This application should be run on an EOEPCA processing deployment. This can be done by taking inspiration from some of the http files found in the EOEPCA Deployment Guide [repository](https://github.com/EOEPCA/deployment-guide/tree/main/deploy/samples/requests/processing) which contains sample scripts that allow cwl commands to be passed to the ADES for execution.
+A copy of the `convert-url-app.http` file is contained within this directory and can be used to run the `convert-url-app.cwl` with any inputs so desired. I suggest the files contained within this public repository are passed to the ADES using the http file including the png input images.
+To run the API requests I suggest using the REST API extension within VSCode.
 
 Updates need to be made to the `convert-url.http` files to point to the cwl scripts found in this repo, as well as updating the input arguments contained in the http file.
