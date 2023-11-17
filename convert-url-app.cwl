@@ -35,6 +35,7 @@ $graph:
 
   - class: CommandLineTool
     id: convert
+    #baseCommand: ['python', '-m', 'convert_image']
     inputs:
       fn:
         type: string
@@ -56,6 +57,5 @@ $graph:
           glob: .
     requirements:
       DockerRequirement:
-        dockerPull: tjellicoetpzuk/convertnew:latest
-      NetworkAccess:
-        networkAccess: true
+        dockerPull: tjellicoetpzuk/pythonconvert:latest
+        #convertnew
