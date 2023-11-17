@@ -22,7 +22,7 @@ $graph:
       - id: wf_outputs
         type: Directory[]
         outputSource:
-          - convert/results
+        - convert/results
     steps:
       convert:
         run: '#convert'
