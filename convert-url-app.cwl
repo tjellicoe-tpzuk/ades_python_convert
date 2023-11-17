@@ -20,12 +20,12 @@ $graph:
         type: string
     outputs:
       - id: wf_outputs
-        type: Directory
+        type: Directory[]
         outputSource:
           - convert/results
     steps:
       convert:
-        run: "#convert"
+        run: '#convert'
         in:
           fn: fn
           url: url
