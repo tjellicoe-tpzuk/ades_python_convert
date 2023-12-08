@@ -3,14 +3,14 @@ $namespaces:
   s: https://schema.org/
 schemas:
   - http://schema.org/version/9.0/schemaorg-current-http.rdf
-s:softwareVersion: 0.0.1
+s:softwareVersion: 0.1.2
 
 $graph:
   # Workflow entrypoint
   - class: Workflow
     id: convert-url
-    label: convert netcdf type file by a scale factor
-    doc: Applies scale factor to all pixels in a netcdf file
+    label: convert url image
+    doc: Applies resize algorithm to selected image
     inputs:
       fn:
         type: string
@@ -20,7 +20,7 @@ $graph:
         type: string
     outputs:
       - id: wf_outputs
-        type: Directory[]
+        type: Directory
         outputSource:
         - convert/results
     steps:
@@ -36,6 +36,7 @@ $graph:
 
   - class: CommandLineTool
     id: convert
+    baseCommand: ['python', '-m', 'convert_image']
     inputs:
       fn:
         type: string
@@ -52,7 +53,7 @@ $graph:
           position: 3
     outputs:
       results:
-        type: Directory[]
+        type: Directory
         outputBinding:
           glob: .
     requirements:
