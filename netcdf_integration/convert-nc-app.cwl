@@ -3,14 +3,14 @@ $namespaces:
   s: https://schema.org/
 schemas:
   - http://schema.org/version/9.0/schemaorg-current-http.rdf
-s:softwareVersion: 0.1.2
+s:softwareVersion: 0.0.1
 
 $graph:
   # Workflow entrypoint
   - class: Workflow
     id: convert-url
-    label: convert url image
-    doc: Applies resize algorithm to selected image
+    label: convert netcdf type file by a scale factor
+    doc: Applies scale factor to all pixels in a netcdf file
     inputs:
       fn:
         type: string
