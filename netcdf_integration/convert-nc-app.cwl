@@ -14,7 +14,7 @@ $graph:
     inputs:
       fn:
         type: string
-      url:
+      input_reference:
         type: string
       size:
         type: string
