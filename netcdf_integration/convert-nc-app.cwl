@@ -28,7 +28,7 @@ $graph:
         run: '#convert'
         in:
           fn: fn
-          url: url
+          input_reference: input_reference
           size: size
         out:
           - results
@@ -42,7 +42,7 @@ $graph:
         type: string
         inputBinding:
           position: 1
-      url:
+      input_reference:
         type: string
         inputBinding:
           position: 2
