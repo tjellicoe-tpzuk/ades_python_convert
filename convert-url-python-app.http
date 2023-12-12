@@ -44,7 +44,7 @@ Content-Type: application/json
 
 {
   "executionUnit": {
-    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/temp_ades_convert/main/convert-url-app.cwl",
+    "href": "https://raw.githubusercontent.com/tjellicoe-tpzuk/ades_python_convert/main/convert-url-app.cwl",
     "type": "application/cwl"
   }
 }
