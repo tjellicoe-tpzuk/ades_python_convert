@@ -57,5 +57,4 @@ $graph:
           glob: .
     requirements:
       DockerRequirement:
-        dockerPull: tjellicoetpzuk/pythonconvert:latest
-        #convertnew
+        dockerPull: tjellicoetpzuk/convert_new:latest

@@ -58,5 +58,5 @@ $graph:
           glob: .
     requirements:
       DockerRequirement:
-        dockerPull: eoepca/convert:latest
+        dockerPull: eoepca/convert_new:latest
 
