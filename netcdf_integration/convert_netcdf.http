@@ -11,6 +11,17 @@
 @idToken = {{authenticate.response.body.id_token}}
 @deployStatus = {{deployProcess.response.headers.Location}}
 @executeStatus = {{executeProcess.response.headers.Location}}
+@processid = {{deployProcess.response.body.id}}
+
+
+
+
+
+
+
+
+
+
 
 ###
 
@@ -38,7 +49,7 @@ Accept: application/json
 
 # @name deployProcess
 POST https://{{ades}}/{{user}}/wps3/processes HTTP/1.1
-Authorization: Bearer {{idToken}}
+#Authorization: Bearer {{idToken}}
 Accept: application/json
 Content-Type: application/json
 
@@ -66,7 +77,7 @@ Accept: application/json
 ###
 
 # @name executeProcess
-POST https://{{ades}}/{{user}}/wps3/processes/convert-url-0_0_1/execution HTTP/1.1
+POST https://{{ades}}/{{user}}/wps3/processes/{{processid}}/execution HTTP/1.1
 #Authorization: Bearer {{idToken}}
 Accept: application/json
 Content-Type: application/json
@@ -75,8 +86,8 @@ Prefer: respond-async
 {
   "inputs": {
       "fn": "scale",
-      "url": "https://raw.githubusercontent.com/tjellicoe-tpzuk/openEO_read-write/main/data/openEO_output_819382.nc",
-      "size": "0.01"
+      "input_reference": "https://raw.githubusercontent.com/tjellicoe-tpzuk/openEO_read-write/main/data/openEO_output_178222.nc",
+      "size": "0.2"
   },
   "response":"raw"
 }
@@ -105,7 +116,7 @@ Accept: application/json
 ###
 
 # @name undeployProcess
-DELETE https://{{ades}}/{{user}}/wps3/processes/snuggs-0_3_0 HTTP/1.1
+DELETE https://{{ades}}/{{user}}/wps3/processes/{{processid}} HTTP/1.1
 Authorization: Bearer {{idToken}}
 Accept: application/json
 
