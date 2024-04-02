@@ -4,8 +4,6 @@
 @login = auth.{{domain}}
 @user = eric
 @pass = defaultPWD
-@clientId = 6195909b-04bc-4d8c-8b92-9cb4e1bdea1f
-@clientSecret = 9a614fe9-b1eb-465d-a0af-85115dcba2e6
 
 @tokenEndpoint = {{openidConfiguration.response.body.token_endpoint}}
 @idToken = {{authenticate.response.body.id_token}}
